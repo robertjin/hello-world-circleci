@@ -14,7 +14,7 @@ jobs:
     steps:
       - run: echo "hello world" > output.txt
       - persist_to_workspace:
-          root: ~/
+          root: /Users/robert.jin/Documents/udacity/devops/circleci/hello-world-circleci
           paths:
             - output.txt
   
@@ -23,7 +23,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - attach_workspace:
-          at: ~/
+          at: /Users/robert.jin/Documents/udacity/devops/circleci/hello-world-circleci
       - run: cat output.txt
 
 # Invoke jobs via workflows
