@@ -17,10 +17,12 @@ jobs:
               fingerprints: ["75:63:c3:37:de:b3:ce:d1:0c:14:9e:f9:bc:ab:37:b3"] 
       - run:
           name: Install Ansible
-          command: apk add --update ansible
+          command: |
+            apk add --update ansible
       - run:
           name: Run Playbook and Configure server
-          command: ansible-playbook -i [inventory-file] [playbook-file]
+          command: |
+            ansible-playbook -i inventory main.yml
 
 # Sequential workflow
 workflows:
