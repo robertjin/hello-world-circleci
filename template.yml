@@ -8,7 +8,7 @@ Resources:
       SecurityGroups:
         - !Ref InstanceSecurityGroup
       # Change this, as applicable to you      
-      KeyName: /Users/robert.jin/Downloads/udacity_rjin.pem
+      KeyName: udacity_rjin
       # Change this, as applicable to you
       # You may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
       ImageId: 'ami-0b49a4a6e8e22fa16' 
