@@ -19,7 +19,7 @@ commands:
 
 # Define the jobs we want to run for this project
 jobs:
-  # Exercise - Rollback
+  # Exercise - Rollbacks
   create_infrastructure: 
     docker:
       - image: amazon/aws-cli
